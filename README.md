@@ -20,6 +20,6 @@ Un servidor DNS de Solo Caché, es muy parecido al servidor de reenvío, este se
 
 Si observamos la siguiente imagen, el PCb quiere entrar a: www.github.com , creará una consulta, ya que no sabe cual es la IP de esa página web, así que se la preguntará al servidor DNS.
 
-Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a la respuesta, es decir, no ha encontrado el registro de www.github.com así que, realizará una consulta recursiva a otro servidor DNS para que nos de la respuesta correcta.
+Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a la respuesta, es decir, no ha encontrado el registro de: www.github.com así que, realizará una consulta recursiva a otro servidor DNS para que nos de la respuesta correcta.
 
 El otro servidor DNS nos contestará a la consulta que ha realizado nuestro DNS, la anotará en su caché temporalmente y le responderá al cliente.
