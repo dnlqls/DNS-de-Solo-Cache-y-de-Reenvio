@@ -16,4 +16,6 @@ Ahora, si el PC3 quiere ir a www.youtube.com nuestro servidor DNS, tendría que 
 
 ### Solo Caché.
 
-Un servidor DNS de Solo Caché, es muy parecido al servidor de reenvío, este servidor tampoco tiene zonas maestras configuradas, 
+Un servidor DNS de Solo Caché, es muy parecido al servidor de reenvío, este servidor tampoco tiene zonas maestras configuradas, cuando un cliente le pregunta por una solicitud DNS, primero revisa su caché, es decir, como un bloc de notas que contiene IP a nombres y viceversa, si en la caché está la respuesta de la solicitud, simplemente le responde al cliente con la respuesta, en el caso que no lo esté, realizará una consulta recursiva y el registro se guardará en la caché por un tiempo limitado, por si otro cliente quiere hacer la misma pregunta, al menos estará en la caché y no tendrá que hacer otra consulta recursiva.
+
+
