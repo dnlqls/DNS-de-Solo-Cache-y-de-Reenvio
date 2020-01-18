@@ -43,6 +43,6 @@ Si vemos las imagenenes siguientes, el servidor DNS de Reenvío, utiliza mucho m
 ![Esto merece una matrícula]()
 ![Esto merece una matrícula]()
 
-[Dame click para ir a la página de cómo configurar un servidor de Reenvío.]()
+[Dame click para ir a la página de cómo configurar un servidor de Reenvío.](Reenvío.md)
 
-[Haz click para entrar en la página de cómo configurar un servidor de Solo Caché.]()
+[Haz click para entrar en la página de cómo configurar un servidor de Solo Caché.](Solo Caché.md)
