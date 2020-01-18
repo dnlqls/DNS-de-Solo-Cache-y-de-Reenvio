@@ -2,7 +2,7 @@
 
 En esta página aprenderás a cómo diferenciar y configurar un servidor DNS de Solo Caché y un servidor de Reenvío utilizando el servicio Webmin.
 
-## Diferencias entre un servidor DNS de Solo Caché y uno de Reenvio.
+## Diferencias entre un servidor DNS de Solo Caché y uno de Reenvío.
 
 ### Reenvío.
 
