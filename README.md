@@ -12,7 +12,7 @@ Como podemos apreciar en la imagen, el PC1 quiere entrar a: www.youtube.com pero
 ![Esto merece una matrícula](Imagenes/Reenvio/reenvio.png)
 
 Si vemos la imagen, el otro servidor DNS proveniente de Internet, ya sabe la IP de la solicitud de: www.youtube.com que se la mandará a nuestro servidor DNS, para que luego, este la mande al PC1.
-![Esto merece una matrícula]()
+![Esto merece una matrícula](Imagenes/Reenvio/reenvio2.png)
 
 Ahora, si el PC3 quiere ir a: www.youtube.com nuestro servidor DNS, tendría que hacer lo mismo, es decir, reenviar la solicitud a Internet y que otro servidor DNS nos la resuelva por nosotros.
 ![Esto merece una matrícula](Imagenes/Reenvio/reenvio3.png)
