@@ -34,4 +34,11 @@ El otro servidor DNS nos contestará a la consulta que ha realizado nuestro DNS,
 Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una consulta a nuestro servidor DNS, con la misma dirección que el cliente anterior (www.github.com), no hace falta repetir todo el proceso, ya que, nuestro DNS ha almacenado la respuesta y se la mandará al segundo cliente.
 ![Esto merece una matrícula](Imagenes/Caché/final.png)
 
-## ¿Cuál es preferible usar?
+----
+
+Una  característica del servidor DNS de Reenvío, consiste en minimizar el tráfico sobre redes con conexiones externas lentas o que están muy congestionadas con respecto al servidor de Solo Caché.
+
+Si vemos las imagenenes siguientes, el servidor DNS de Reenvío, utiliza mucho menos paquetes que el de Solo Caché.
+
+![Esto merece una matrícula]()
+![Esto merece una matrícula]()
