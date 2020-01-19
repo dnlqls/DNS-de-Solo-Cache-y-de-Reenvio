@@ -7,6 +7,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 ## Configuración DNS.
 
 1.- Vamos a Webmin y entramos en la página de configuración de BIND9.
+
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/1.PNG)
 
 2.- Daremos click en **"Root Zone"**, en el apartado de <**Existing DNS Zones**>.
@@ -15,7 +16,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/0.PNG)
 2.- Luego, vamos a "**Forwarding and Transfers**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/Forward.PNG)
-3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan y le daremos a "**Save**".
+3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan, para que no haya ninguna IP de otros servidores DNS, ya quem usaremos las respuestas recursivas y le daremos a "**Save**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/forwarder1.PNG)
 
 4.- Ahora, vamos a la página de configuración de Bind9 y escogeremos ""**Edit Config File**".
