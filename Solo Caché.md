@@ -1,4 +1,4 @@
-# Cómo configurar un Solo Caché.
+# Cómo configurar un servidor de Solo Caché.
 
 En está página web, se realizará una configuración sobre la máquina UbuntuServer 16.04.5, para configurar y comprobar el funcionamiento de un servidor DNS De Solo Caché utilizando el servicio Webmin.
 
