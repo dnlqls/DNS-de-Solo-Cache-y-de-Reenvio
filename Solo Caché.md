@@ -23,7 +23,9 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 6.- Vamos al final de ese fichero, y escribiremos debajo de <**dnssec-validation auto;**>:
 
    listen-on-v6 { any; };
+   
    recursion yes;
+   
    allow-recursion {localnets;};
     
    allow-transfer {none;};
@@ -34,6 +36,9 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
   Y daremos en **"Save**".
   
   7.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
-  []()
+  ![]()
   
   ## Comprobar funcionamiento del DNS Solo Caché.
+
+Para comprobar el funcionaiento del DNS de Solo Caché, hay que tener como mínimo 1 cliente, para realizarle peticiones DNS junto con nuestro servidor.
+
