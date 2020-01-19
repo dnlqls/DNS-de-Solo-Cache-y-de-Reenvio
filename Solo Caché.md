@@ -7,22 +7,22 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 ## Configuración DNS.
 
 1.- Vamos a Webmin y entramos en la página de configuración de BIND9.
-![]()
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/1.PNG)
 
 2.- Daremos click en **"Root Zone"**, en el apartado de <**Existing DNS Zones**>.
-![]
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/-1.PNG)
 3.- Y daremos al botón "**Re-Download Root Nameservers**", una vez dado procederemos a ir a la página por defecto que da Bind9
-![]
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/0.PNG)
 2.- Luego, vamos a "**Forwarding and Transfers**".
-![]()
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/Forward.PNG)
 3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan y le daremos a "**Save**".
-![]()
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/forwarder1.PNG)
 
 4.- Ahora, vamos a la página de configuración de Bind9 y escogeremos ""**Edit Config File**".
-![]()
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/config.PNG)
 
-5.- A continuación, nos situamos un poco a la derecha de dónde dice "**Edit Config File**", ya que, podremos desplegar una lista, pues, escogeremos <**/etc/bind/named.conf.options**>.
-![]()
+5.- A continuación, nos situamos un poco a la derecha de dónde dice "**Edit Config File**", ya que, podremos desplegar una lista, pues  escogeremos: <**/etc/bind/named.conf.options**>.
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/3.PNG)
 
 6.- Vamos al final de ese fichero, y escribiremos debajo de <**dnssec-validation auto;**>:
 
@@ -35,7 +35,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
    allow-transfer {none;};
    
   De tal forma, que quede así:
-  ![]()
+  ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/4.PNG)
   
   Y daremos en **"Save**".
   
@@ -50,17 +50,17 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 
   
   7.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
-  ![]()
+  ![Me deprimo si me suspendes](reinicio.PNG)
   
   ## Comprobar funcionamiento del DNS Solo Caché.
 
 Para comprobar el funcionaiento del DNS de Solo Caché, hay que tener como mínimo 1 cliente, para realizarle peticiones DNS junto con nuestro servidor.
 
 Empezamos con el servidor UbuntuServer, realizamos un **dig** a una dirección, en mi caso, www.github.com y aparece esto:
-![]()
+![Me deprimo si me suspendes]()
 
 Si nos fijamos bien en la imagen anterior en las zonas marcados con cuadrados de colores, el cuadrado rojo representa el tiempo que está en caché (en segundos) la petición, por si otro cliente realiza la misma petición. Y el cuadrado morado, representa el tiempo que hemos tenido que esperar para que nuestra consulta sea respondida (en milisegundos).
 
 Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un cliente al servidor DNS), 
-![]
+![Me deprimo si me suspendes]()
 
