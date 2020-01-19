@@ -25,10 +25,10 @@ Un servidor DNS de Solo Caché, es muy parecido al servidor de reenvío, este se
 Si observamos la siguiente imagen, el PC_B quiere entrar a: www.github.com, creará una consulta, ya que no sabe cual es la IP de esa página web, así que se la preguntará al servidor DNS.
 ![Esto merece una matrícula](Imagenes/Caché/1.png)
 
-Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a la respuesta, es decir, no ha encontrado el registro de: www.github.com así que, realizará una consulta recursiva a otro servidor DNS para que nos de la respuesta correcta.
+Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a la respuesta, es decir, no ha encontrado el registro de: www.github.com así que, realizará una consulta recursiva a los servidores raíz para que nos de la respuesta correcta.
 ![Esto merece una matrícula](Imagenes/Caché/2.png)
 
-El otro servidor DNS nos contestará a la consulta que ha realizado nuestro DNS, la anotará en su caché temporalmente y le responderá al cliente.
+El servidor raíz nos contestará a la consulta que ha realizado nuestro DNS, la anotará en su caché temporalmente y le responderá al cliente.
 ![Esto merece una matrícula](Imagenes/Caché/3.png)
 
 Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una consulta a nuestro servidor DNS, con la misma dirección que el cliente anterior (www.github.com), no hace falta repetir todo el proceso, ya que, nuestro DNS ha almacenado la respuesta y se la mandará al segundo cliente.
@@ -36,10 +36,11 @@ Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una
 
 ----
 
+## Diferencia entre DNS Solo Caché y de Reenvio.
+
 Una  característica del servidor DNS de Reenvío, consiste en minimizar el tráfico sobre redes con conexiones externas lentas o que están muy congestionadas con respecto al servidor de Solo Caché.
 
-Si vemos las imagenenes siguientes, el servidor DNS de Reenvío, utiliza mucho menos paquetes que el de Solo Caché.
-
+Si vemos las imagenenes siguientes, el servidor DNS de Reenvío, utiliza muchísimos menos paquetes que el de Solo Caché, ya que, el de reenvío se lo da a otro DNS y espera a que sea solucionado, en cambio, el Caché no para de realizar consultas con los raíces, etc.
 ![Esto merece una matrícula](Imagenes/lag.PNG)
 ![Esto merece una matrícula](Imagenes/lag_reenvio.PNG)
 
