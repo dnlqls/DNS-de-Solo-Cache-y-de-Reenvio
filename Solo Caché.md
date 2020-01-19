@@ -56,11 +56,13 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 
 Para comprobar el funcionaiento del DNS de Solo Caché, hay que tener como mínimo 1 cliente, para realizarle peticiones DNS junto con nuestro servidor.
 
+**NOTA**: _Es necesario el cliente para evitar malentendidos, ya que si lo hacemos siempre en el servidor, no podemos descubrir si funciona la caché del bind9, porque se puede sustutir por la propia caché de la máquina virtual._
+
 Empezamos con el servidor UbuntuServer, realizamos un **dig** a una dirección, en mi caso, www.github.com y aparece esto:
-![Me deprimo si me suspendes]()
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/cache compr1.PNG)
 
 Si nos fijamos bien en la imagen anterior en las zonas marcados con cuadrados de colores, el cuadrado rojo representa el tiempo que está en caché (en segundos) la petición, por si otro cliente realiza la misma petición. Y el cuadrado morado, representa el tiempo que hemos tenido que esperar para que nuestra consulta sea respondida (en milisegundos).
 
-Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un cliente al servidor DNS), 
-![Me deprimo si me suspendes]()
+Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un cliente al servidor DNS), a escasos segundos de la imagen anterior, se puede apreciar por los cuadrados de colores, que tanto el tiempo de respuesta, como el tiempo de la caché (TTL) han bajado, produciendo que todo funcione correctamente.
+![Me deprimo si me suspendesImagenes/Caché/Configuración/cache compr2.PNG
 
