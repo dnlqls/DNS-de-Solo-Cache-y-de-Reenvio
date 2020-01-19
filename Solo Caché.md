@@ -70,3 +70,5 @@ Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un
 
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/cache compr2.PNG)
 
+[Pinchame para volver a la Página Principal](README.md)
+
