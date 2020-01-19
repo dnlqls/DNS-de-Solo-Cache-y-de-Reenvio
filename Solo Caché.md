@@ -9,7 +9,11 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 1.- Vamos a Webmin y entramos en la página de configuración de BIND9.
 ![]()
 
-2.- Una vez dentro de la página, vamos a "**Forwarding and Transfers**".
+2.- Daremos click en **"Root Zone"**, en el apartado de <**Existing DNS Zones**>.
+![]
+3.- Y daremos al botón "**Re-Download Root Nameservers**", una vez dado procederemos a ir a la página por defecto que da Bind9
+![]
+2.- Luego, vamos a "**Forwarding and Transfers**".
 ![]()
 3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan y le daremos a "**Save**".
 ![]()
@@ -34,6 +38,16 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
   ![]()
   
   Y daremos en **"Save**".
+  
+  Lo que hemos hecho anteriormente es:
+ 
+  Variable | Funcionalidad
+------------ | -------------
+ listen-on-v6 { any; }; | A qué direcciones locales se les permite realizar consultas AAAA (IPv6).
+ recursion yes; | Permite activar la recursividad para consultar a los servidores raíz.
+ allow-recursion {localnets;}; | Permite la recursión a los equipos locales.
+ allow-transfer {none;}; | Deniega la transferencia a los host.
+
   
   7.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
   ![]()
