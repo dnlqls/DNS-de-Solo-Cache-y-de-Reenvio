@@ -40,8 +40,8 @@ Una  característica del servidor DNS de Reenvío, consiste en minimizar el trá
 
 Si vemos las imagenenes siguientes, el servidor DNS de Reenvío, utiliza mucho menos paquetes que el de Solo Caché.
 
-![Esto merece una matrícula]()
-![Esto merece una matrícula]()
+![Esto merece una matrícula](Imagenes/lag.PNG)
+![Esto merece una matrícula](Imagenes/lag_reenvio.PNG)
 
 ----
 
