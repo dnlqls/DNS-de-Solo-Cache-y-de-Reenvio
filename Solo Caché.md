@@ -11,7 +11,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 
 2.- Una vez dentro de la página, vamos a "**Forwarding and Transfers**".
 ![]()
-3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan y le daremos a "**Save**.
+3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan y le daremos a "**Save**".
 ![]()
 
 4.- Ahora, vamos a la página de configuración de Bind9 y escogeremos ""**Edit Config File**".
@@ -23,9 +23,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 6.- Vamos al final de ese fichero, y escribiremos debajo de <**dnssec-validation auto;**>:
 
    listen-on-v6 { any; };
-    
    recursion yes;
-    
    allow-recursion {localnets;};
     
    allow-transfer {none;};
