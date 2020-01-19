@@ -68,5 +68,5 @@ Si nos fijamos bien en la imagen anterior en las zonas marcados con cuadrados de
 
 Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un cliente al servidor DNS), a escasos segundos de la imagen anterior, se puede apreciar por los cuadrados de colores, que tanto el tiempo de respuesta, como el tiempo de la caché (TTL) han bajado, produciendo que todo funcione correctamente.
 
-![Me deprimo si me suspendesImagenes/Caché/Configuración/cache compr2.PNG
+![Me deprimo si me suspendes](Imagenes/Caché/Configuración/cache compr2.PNG)
 
