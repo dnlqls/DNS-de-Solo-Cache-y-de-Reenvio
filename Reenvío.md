@@ -7,7 +7,8 @@ El objetivo de esta práctica es que el alumnado sepa y entienda cómo configura
 # Configurar un servidor DNS de Reenvío.
 
 1.- Vamos a la página de Webmin y seleccionaremos las página de configuración de BIND9.
-[Quiero terminar ya]()
+
+![Quiero terminar ya]()
 
 2.- En la página de configuración del servidor DNS BIND9, vamos a dar click en "Edit Config File".
 []()
