@@ -42,3 +42,11 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 
 Para comprobar el funcionaiento del DNS de Solo Caché, hay que tener como mínimo 1 cliente, para realizarle peticiones DNS junto con nuestro servidor.
 
+Empezamos con el servidor UbuntuServer, realizamos un **dig** a una dirección, en mi caso, www.github.com y aparece esto:
+![]()
+
+Si nos fijamos bien en la imagen anterior en las zonas marcados con cuadrados de colores, el cuadrado rojo representa el tiempo que está en caché (en segundos) la petición, por si otro cliente realiza la misma petición. Y el cuadrado morado, representa el tiempo que hemos tenido que esperar para que nuestra consulta sea respondida (en milisegundos).
+
+Pero en la imagen que aparece a continuación, hecha desde otra máquina (por un cliente al servidor DNS), 
+![]
+
