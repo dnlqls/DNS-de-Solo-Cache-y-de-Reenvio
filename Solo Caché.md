@@ -14,18 +14,18 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/-1.PNG)
 3.- Y daremos al botón "**Re-Download Root Nameservers**", una vez dado procederemos a ir a la página por defecto que da Bind9
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/0.PNG)
-2.- Luego, vamos a "**Forwarding and Transfers**".
+4.- Luego, vamos a "**Forwarding and Transfers**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/Forward.PNG)
-3.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan, para que no haya ninguna IP de otros servidores DNS, ya que, usaremos las respuestas recursivas y le daremos a "**Save**".
+5.- Dónde dice "**Server to forward queries to**", borramos todas las IP que aparezcan, para que no haya ninguna IP de otros servidores DNS, ya que, usaremos las respuestas recursivas y le daremos a "**Save**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/forwarder1.PNG)
 
-4.- Ahora, vamos a la página de configuración de Bind9 y escogeremos "**Edit Config File**".
+6.- Ahora, vamos a la página de configuración de Bind9 y escogeremos "**Edit Config File**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/config.PNG)
 
 5.- A continuación, nos situamos un poco a la derecha de dónde dice "**Edit Config File**", ya que, podremos desplegar una lista, pues  escogeremos: <**/etc/bind/named.conf.options**>.
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/3.PNG)
 
-6.- Vamos al final de ese fichero, y escribiremos debajo de <**dnssec-validation auto;**>:
+7.- Vamos al final de ese fichero, y escribiremos debajo de <**dnssec-validation auto;**>:
 
    listen-on-v6 { any; };
    
@@ -50,7 +50,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
  allow-transfer {none;}; | Deniega la transferencia a los host.
 
   
-  7.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
+  8.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
  
  ![Me deprimo si me suspendes](Imagenes/Caché/reinicio.PNG)
   
